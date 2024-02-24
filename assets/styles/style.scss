@@ -1,0 +1,517 @@
+$primary-text-color:#23A6F0;
+$second-text-color:#737373;
+$primary-color:#23A6F0;
+$muted-color:#BDBDBD;
+$danger-color:#E74040;
+$light-background-color:#FFFFFF;
+$text-color:#252B42;
+$dark-background-color:#252B42;
+$light-gray-1:#FAFAFA;
+$light-text-color:#FFFFFF;
+$alert-color:#E77C40;
+$secondary:#F3CD03;
+$secondary-color-1:#40BB15;
+$font: "Montserrat", sans-serif;
+
+h1{
+    font-size: 58px;
+}
+h2{
+    font-size: 40px;
+
+}
+h3{
+    font-size: 24px;
+}
+h4{
+    font-size: 20px;
+}
+h5{
+    font-size: 16px;
+}
+h6{
+    font-size: 14px;
+}
+a{
+    font-size: 14px;
+}
+small{
+    font-size: 12px;
+}
+p{
+    font-size: 14px;
+}
+.btn-text{
+    font-size: 14px;
+}
+
+$light-drop-shadow: 0 2px 4px  rgba(0, 0, 0, 0.1);
+$accentued-drop-shadow: 0 13px 19px rgba(0, 0, 0, 0.07);
+ 
+*{
+    font-family:$font;
+}
+%flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+%flex-column{
+    display: flex;
+    flex-direction: column;
+}
+%valign-center{
+    display: flex;
+    align-items: center;
+}
+%link{
+    color: $light-text-color;
+    text-decoration: none;
+    font-family: $font;
+    font-weight: 700;
+}
+%title-color{
+    color: $light-text-color;
+    font-family: $font;
+}
+%card-parameters{
+    width: 328px;
+    height: 292px;
+    background-color: $light-background-color;
+    box-shadow: $accentued-drop-shadow;
+}
+body{
+    background-color: $dark-background-color;
+}
+header{
+   @extend %flex-center;
+    justify-content: space-between;
+   padding: 30px 195px; 
+    .header-content{
+        @extend %valign-center;
+        gap: 80px;
+    }
+    .menu-wrapper{
+        display: flex;
+        gap: 21px;
+        
+        .menu-wrapper-item a, btn-login {
+            @extend %link;
+        }
+    }
+.button-wrapper{
+        display: flex;
+        gap: 45px;
+        align-items: center;
+    .btn-login{
+    @extend %link;
+}
+    .btn-join{
+    background-color: $primary-color;
+    color: $light-text-color;
+    text-decoration: none;
+    padding: 15px 25px;
+    display: flex;
+    gap: 15px;
+    border-radius: 5px;
+    font-family: $font;
+    font-weight: 600;
+    align-items: center;
+}
+}
+}
+.main-content{
+    
+    .bg-wrapper{
+    .hero-button-wrapper{
+        
+    .getquote{
+    background-color: $primary-color;
+    @extend %title-color;
+    padding: 15px 40px  ;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    }
+    .learnmore{
+    padding: 13px 40px  ;
+    border: 2px solid $primary-color;
+    border-radius: 4px;
+    font-family: $font;
+    color: $primary-color;
+    font-weight: 600;
+    }
+    .learnmore:hover{
+    background-color: $primary-color;
+    transition: 300ms;
+    color: white;
+}
+    .getquote:hover{
+    background-color: white;
+    color: $primary-color;
+    transition: 300ms;
+    }
+    }
+    background-image: url(/assets/img/Vector.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    .hero-img-wrapper{
+    margin-right: 250px;
+    
+    }
+    .hero-texts{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-left: 250px;
+    
+    .onlinet{
+    color: $primary-color;
+    font-family: $font;
+    font-weight: 600;
+    
+}  
+    h1{ @extend %title-color;
+    font-weight: 700;
+    line-height: 85px;
+    } 
+    h4{
+    @extend %title-color;
+    font-weight: 300;
+}
+
+}
+}
+}
+
+    .card-wrapper{
+        @extend %flex-center;
+        gap:30px;
+        align-items: center;
+        margin-top: 700px;
+        float: left;
+        margin-left: -200px;
+        .card-f{
+            @extend %card-parameters;
+            margin-left: 500px;
+           
+            p{
+                color: $second-text-color;
+                font-family: $font;
+                font-weight: 400;
+            }
+            .logo-f{
+                width: 76px;
+                height: 80px;
+                background-color: $danger-color;
+                border-radius: 7px;
+                @extend %flex-center;
+                margin: 22px 19px;
+                .fa-flag{
+                    font-size: 25px;
+                    color: $light-text-color;
+                }
+            }
+            .card-f-title{
+                font-family: $font;
+                font-weight: 800;
+                color: $text-color;
+            }
+        }
+        .card-s{
+            @extend %card-parameters;
+           
+            p{
+                color: $second-text-color;
+                font-family: $font;
+                font-weight: 400;
+            }
+            .logo-s{
+                width: 76px;
+                height: 80px;
+                background-color: $danger-color;
+                border-radius: 7px;
+                @extend %flex-center;
+                margin: 22px 19px;
+                .fa-location-dot{
+                    font-size: 25px;
+                    color: $light-text-color;
+                }
+            }
+            .card-s-title{
+                font-family: $font;
+                font-weight: 800;
+                color: $text-color;
+            }
+        }
+        .card-t{
+            @extend %card-parameters;
+            
+            p{
+                color: $second-text-color;
+                font-family: $font;
+                font-weight: 400;
+            }
+            .logo-t{
+                width: 76px;
+                height: 80px;
+                background-color: $danger-color;
+                border-radius: 7px;
+                @extend %flex-center;
+                margin: 22px 19px;
+                .fa-credit-card{
+                    font-size: 25px;
+                    color: $light-text-color;
+                }
+            }
+            .card-t-title{
+                font-family: $font;
+                font-weight: 800;
+                color: $text-color;
+            }
+        }
+    }
+.second-layout{
+    background-color: $dark-background-color;
+    height: 761px;
+    width: 1440px;
+    margin-top: 1350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    margin-left: 200px;
+    .second-texts{
+        display: flex;
+        flex-direction: column;
+        gap: 55px;
+        margin-right: 350px;
+        margin-top: 50px;
+        .red-line{
+            width: 94px;
+            height: 7px;
+            background-color: $danger-color;
+            border-radius: 1px;
+        }
+        .packages{
+            @extend %title-color;
+            font-weight: 700;
+        }
+        .desc{
+            @extend %title-color;
+            font-weight: 200;
+        }
+        .learn{
+            color: $primary-text-color;
+            font-family: $font;
+            font-weight: 600;
+            text-decoration: none;
+            .fa-chevron-right{
+                color: $primary-text-color;
+            }
+        }
+
+    }
+}
+.third-layout{
+    background-color: $dark-background-color;
+    height: 761px;
+    width: 1440px;
+    margin-top: 300px;
+    
+    .header-title{
+        @extend %flex-column;
+        gap: 10px;
+        .third-title{
+            font-family: $font;
+            color: $primary-color;
+            font-weight: 500;
+        }
+        .watch{
+            @extend %title-color;
+            font-weight: 700;
+        }
+        .desc-third{
+            @extend %title-color;
+            font-weight: 300;
+            line-height: 20px;
+        }
+    }
+    .rows{
+        display: flex;
+        flex-direction: row;
+        
+        .row-item-1{
+            width: 328px;
+            height: 678px;
+            background-color: $light-background-color;
+            .row-item-texts{
+                @extend %flex-column;
+                gap: 20px;
+                align-items: center;
+                
+                .edepart{
+                    text-decoration: none;
+                    color: $primary-text-color;
+                    font-family: $font;
+                    font-weight: 500;
+                    text-align: left;
+                }
+                .graphdes{
+                    font-family: $font;
+                    font-weight: 600;
+                    color: $text-color;
+                    font-size: 16px;
+                    text-align: left;
+                }
+                .desc1{
+                    font-family: $font;
+                    color: $second-text-color;
+                    font-weight: 300;
+                    text-align: left;
+                }
+                .sales{
+                    font-family: $font;
+                    color:$second-text-color;
+                    font-weight: 600;
+                    text-align: left;
+                }
+                .price{
+                    font-family: $font;
+                    color: $muted-color;
+                    span{
+                        color: $secondary-color-1;
+                        font-weight: 800;
+                    }
+                    
+                }
+                .stats{
+                    font-family: $font;
+                    color: $second-text-color;
+                }
+                .learnbtn{
+                    border:2px solid $primary-color;
+                    border-radius: 20px;
+                    padding: 10px 20px;
+                    .learn{
+                        text-decoration: none;
+                        font-family: $font;
+                        font-weight: 600;
+                        color: $primary-color;
+                    }
+                }
+
+            }
+            .salebtn{
+                width: 51px;
+                height: 24px;
+                background-color: $danger-color;
+                border-radius: 3px;
+                display: flex;
+                justify-content: center;
+                color: $light-text-color;
+                font-family: $font;
+                text-align: center;
+                font-weight: 600;
+                
+            }
+            
+        }
+    }
+}
+.fourth-layout{
+    background-color: $dark-background-color;
+    height: 761px;
+    width: 1440px;
+    margin-top: 2300px;
+    .comments{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        .comment1{
+            width: 348px;
+            height: 317px;
+            background-color: $light-background-color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 30px;
+            .userimg{
+                width: 50px;
+                
+            }
+            .stars{
+                width: 137px;
+                height: 22px;
+            }
+            .user{
+                width: 130px;
+                height: 22px;
+            }
+            .comment-text{
+                font-family: $font;
+                color: $second-text-color;
+                font-weight: 300;
+                text-align: center;
+            }
+            .user{
+                @extend %title-color;
+                color:$primary-color;
+                font-weight: 600;
+            }
+        }
+    }
+    .header-texts{
+        @extend %flex-column;
+        gap: 15px;
+        .prac{
+            font-family: $font;
+            color: $primary-color;
+
+        }
+        .each{
+            @extend %title-color;
+            font-weight: 700;
+        }
+        .prob{
+            @extend %title-color;
+            font-weight: 300;
+            line-height: 20px;
+        }
+    }
+}
+.fifth-layout{
+    background-color: $dark-background-color;
+    height: 761px;
+    width: 1440px;
+    margin-top: 2900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .prac{
+        font-family: $font;
+        color: $primary-color;
+        font-weight: 600;
+    }
+    .products{
+        @extend %title-color;
+        font-weight: 700;
+    }
+    .desc{
+        font-family: $font;
+        color: $light-text-color;
+        font-weight: 300;
+        text-align: center;
+    }
+}
